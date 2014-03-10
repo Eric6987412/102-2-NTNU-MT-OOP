@@ -26,7 +26,7 @@ namespace Quiz3
         }
 
         //以任意順序輸入三點, 輸入完最後一點時, 同時完成三邊長的計算, 但不檢驗是否合法
-        //"觀察者模式"不適合用在此, 因為三角形平移時不一定要知道邊長, 但是持續更新邊長計算量會很大
+        //這就是"觀察者模式", 但不恰當, 因為三角形平移時不一定要知道邊長, 但是持續更新邊長計算量會很大
         public void setPoint0(double X, double Y){ P[0].X = X; P[0].Y = Y; RenewDistance(); }
         public void setPoint1(double X, double Y){ P[1].X = X; P[1].Y = Y; RenewDistance(); }
         public void setPoint2(double X, double Y){ P[2].X = X; P[2].Y = Y; RenewDistance(); }
